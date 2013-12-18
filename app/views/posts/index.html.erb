@@ -8,11 +8,11 @@
   <form ng-submit="create()" name="hello" role="form" class="col-md-8">
     <div class="form-group">
       <label for="title" class="control-label">Title</label>
-      <input type="text" name="title" id="title" ng-model="newPost.title" class="form-control" placeholder="Enter title"/>
+      <input type="text" name="title" id="title" ng-model="newPost.title" class="form-control" placeholder="Enter title" required />
     </div>
     <div class="form-group">
       <label for="body" class="control-label">Body</label>
-      <textarea name="body" id="body" ng-model="newPost.body" class="form-control" rows="3" placeholder="Wrtie your blog"></textarea>
+      <textarea name="body" id="body" ng-model="newPost.body" class="form-control" rows="3" placeholder="Wrtie your blog" required ></textarea>
     </div>
     <button type="submit" class="btn btn-primary btn-lg">
       <span class="glyphicon glyphicon-ok"> Post</span>
